@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Geeta/Documents/android-sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-c6a5f7e06f16b2c3ceafee7bbbf114c00643cd52.jar" />
+    </item>
+    <item
+        jar="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/pre-dexed/debug/classes-a211c5eb0b9d680ae54ba6cbd5409771aa6f0243.jar" />
+    </item>
+    <item
+        jar="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/pre-dexed/debug/classes-f782609d73a9a66534c4e89bc21d21440250ef6e.jar" />
+    </item>
+    <item
+        jar="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/libs/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/pre-dexed/debug/commons-io-2.4-fd53d775a57d1be22f54b200a0b25e8912d7fc61.jar" />
+    </item>
+    <item
+        jar="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/Geeta/AndroidStudioProjects/ToDoApp/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-f9aff56cddb82e59ff65ff0b79c7e570d685c085.jar" />
+    </item>
+
+</items>
