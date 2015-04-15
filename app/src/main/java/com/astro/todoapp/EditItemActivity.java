@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 
 public class EditItemActivity extends ActionBarActivity {
@@ -37,13 +36,13 @@ public class EditItemActivity extends ActionBarActivity {
     public void updateItem(View v)
     {
         tvMultiline.setEnabled(true);
-        tvMultiline.setFocusable(true);
+        //tvMultiline.setFocusable(true);
     }
 
     public void btnOnClick(View v)
     {
         String ret = tvMultiline.getText().toString();
-        Toast.makeText(this, ret, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, ret, Toast.LENGTH_SHORT).show();
 
          Intent i = new Intent();
          i.putExtra("item_Changed",tvMultiline.getText().toString());
@@ -52,15 +51,6 @@ public class EditItemActivity extends ActionBarActivity {
         finish();
     }
 
-
-    public void onBackPressed()
-    {
-        //string data = tvMultiline.getText().toString();
-       // Intent i = new Intent();
-        //i.putExtra("item_Changed",tvMultiline.getText().toString());
-        //setResult(RESULT_OK,i);
-        //finish();
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

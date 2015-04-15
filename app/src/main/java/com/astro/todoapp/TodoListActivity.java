@@ -2,7 +2,6 @@ package com.astro.todoapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,7 +28,6 @@ public class TodoListActivity extends ActionBarActivity {
     private int req_code=0;
 
     public final static String Id_Extra= "com.astro.todoapp._ID";
-  //  public final static int REQ_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,9 +68,6 @@ public class TodoListActivity extends ActionBarActivity {
         {
             FileUtils.writeLines(todoFile, todoItems);
 
-            //Environment.getRootDirectory()
-             Toast.makeText(getApplicationContext(), Environment.getRootDirectory().toString(), Toast.LENGTH_SHORT).show();
-
         }catch(java.io.IOException e)
         {
             e.printStackTrace();
@@ -87,12 +82,9 @@ public class TodoListActivity extends ActionBarActivity {
             Intent myIntent = new Intent(view.getContext(), EditItemActivity.class);
 
             myIntent.putExtra(Id_Extra, todoItems.get((int) id));
-            //startActivity(myIntent);
+
             req_code=(int)id;
             startActivityForResult(myIntent, req_code);
-
-            // Toast.makeText(getApplicationContext(),
-            // ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
         }
 
     };
@@ -159,12 +151,10 @@ public class TodoListActivity extends ActionBarActivity {
                 String strReturned = data.getStringExtra("item_Changed");
                 Toast.makeText(this, strReturned,Toast.LENGTH_SHORT).show();
 
-                //setText(req_code);
                 todoAdapter.remove(todoAdapter.getItem(req_code));
                 todoAdapter.insert(strReturned, req_code);
-              // todoAdapter.add(strReturned);
-               todoAdapter.notifyDataSetChanged();
-               saveItems();
+                todoAdapter.notifyDataSetChanged();
+                saveItems();
             }
         }
     }
